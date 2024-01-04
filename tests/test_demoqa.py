@@ -20,7 +20,7 @@ def test_steps(setup_browser):
         s('.react-datepicker__day--006').click()
         s('#subjectsInput').send_keys('Maths').press_enter()
         s('[for=hobbies-checkbox-2]').click()
-        s('#uploadPicture').send_keys(os.path.abspath('../resources/images.jpeg'))
+        s('#uploadPicture').send_keys(os.path.abspath('resources/images.jpeg'))
         s('#currentAddress').type('city Moscow, street Lenina')
         s('#react-select-3-input').type('Haryana').press_enter()
         s('#react-select-4-input').type('Karnal').press_enter()
